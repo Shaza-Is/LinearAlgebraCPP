@@ -6,17 +6,21 @@ using namespace std;
 
 int main()
 {
-    std::vector<double> v {1, 2, 3};
-    Vector vec = Vector(v);
-    Vector vec2 = Vector(std::vector<double> {1, 2, 3});
-    Vector vec3 = Vector(std::vector<double> {-1, 2, 3});
-    cout << vec.print();
-    bool b = (vec == vec2);
-    cout << b << endl;
+    Vector vec1 = Vector(std::vector<double> {8.218, -9.341});
+    Vector vec2 = Vector(std::vector<double> {7.119, 8.215});
+    Vector vec3 = Vector(std::vector<double> {1.671,-1.012, -0.318});
 
-    b = (vec == vec3);
-    cout << b << endl;
 
-    cout << vec.getDim()<< endl;
+    vec1+ Vector(std::vector<double> {-1.129, 2.111});
+    vec2- Vector(std::vector<double> {-8.223, 0.878});
+
+    vec3*7.41;
+    cout << vec1.print();
+    cout << vec2.print();
+    cout << vec3.print();
+
+
+
+    //cout << vec.getDim()<< endl;
     return 0;
 }

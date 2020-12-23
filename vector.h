@@ -11,6 +11,9 @@ public:
     std::vector<double> getCoordinates() const;
     unsigned long getDim() const;
     bool operator==(Vector v) const;
+    void operator+(Vector v);
+    void operator-(Vector v);
+    void operator*(double c);
     std::string print()const;
 
 

@@ -21,6 +21,27 @@ bool Vector::operator==(Vector v) const
     return coordinates == v.getCoordinates();
 }
 
+void Vector::operator+(Vector v)
+{
+    for(unsigned i = 0; i < coordinates.size(); ++i) {
+      coordinates[i] = coordinates[i] + v.getCoordinates()[i];
+    }
+}
+
+void Vector::operator-(Vector v)
+{
+    for(unsigned i = 0; i < coordinates.size(); ++i) {
+      coordinates[i] = coordinates[i] - v.getCoordinates()[i];
+    }
+}
+
+void Vector::operator*(double c)
+{
+    for(unsigned i = 0; i < coordinates.size(); ++i) {
+      coordinates[i] = c* coordinates[i];
+    }
+}
+
 std::string Vector::print() const
 {
     std::string s = "Vector: (";
